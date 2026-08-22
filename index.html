@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjun Dangwal | Business Manager</title>
+    <style>
+      :root {
+        --bg: #f5f7fb;
+        --panel: #ffffff;
+        --panel-alt: #edf4ff;
+        --primary: #173c6e;
+        --secondary: #3777cc;
+        --accent: #d5e6ff;
+        --text: #1f2d3d;
+        --muted: #586879;
+        --border: #dde7f2;
+        --shadow: 0 18px 42px rgba(23, 60, 110, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(180deg, #f7faff 0%, #eef3f8 100%);
+        color: var(--text);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        background: linear-gradient(135deg, #163b6d 0%, #224f95 100%);
+        color: #fff;
+        padding: 24px 0;
+      }
+
+      .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .brand {
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        font-size: 0.92rem;
+      }
+
+      .nav {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.95rem;
+      }
+
+      main {
+        padding: 32px 0 64px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.35fr 0.85fr;
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-panel {
+        padding: 36px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        color: var(--secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        font-size: 0.78rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        line-height: 1.04;
+      }
+
+      .highlight {
+        color: var(--primary);
+      }
+
+      .lead {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 1.07rem;
+        line-height: 1.7;
+      }
+
+      .cta-row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 22px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.9rem 1.35rem;
+        border-radius: 999px;
+        font-weight: 700;
+      }
+
+      .button.primary {
+        background: var(--primary);
+        color: #fff;
+      }
+
+      .button.secondary {
+        background: var(--accent);
+        color: var(--primary);
+      }
+
+      .pill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .pill-list li {
+        padding: 10px 14px;
+        background: #f3f8ff;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      .contact-panel {
+        background: linear-gradient(135deg, #eef6ff 0%, #dfeeff 100%);
+        padding: 28px;
+      }
+
+      .avatar {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        aspect-ratio: 1 / 1.1;
+        border-radius: 20px;
+        background: linear-gradient(135deg, #184a8f 0%, #3c7dd8 100%);
+        color: #fff;
+        font-size: 4.5rem;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 9px;
+        color: var(--text);
+        font-size: 0.96rem;
+      }
+
+      .mini-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        gap: 16px;
+        margin-top: 26px;
+      }
+
+      .mini-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 20px;
+        box-shadow: var(--shadow);
+      }
+
+      .mini-card strong {
+        display: block;
+        font-size: 1.9rem;
+        color: var(--primary);
+        margin-bottom: 8px;
+      }
+
+      .mini-card span {
+        color: var(--muted);
+        font-size: 0.96rem;
+      }
+
+      section {
+        margin-top: 36px;
+      }
+
+      .section-header {
+        margin-bottom: 16px;
+      }
+
+      .section-header h2 {
+        margin: 0 0 8px;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+      }
+
+      .section-header p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 18px;
+      }
+
+      .skill-card, .experience-card, .project-card, .education-card, .cert-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      .skill-card h3 {
+        margin: 0 0 14px;
+        font-size: 1.12rem;
+      }
+
+      .chip-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .chip {
+        background: var(--panel-alt);
+        border: 1px solid #dce8fa;
+        color: var(--primary);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 18px;
+      }
+
+      .experience-card {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 20px;
+      }
+
+      .period {
+        color: var(--secondary);
+        font-weight: 800;
+      }
+
+      .experience-card h3 {
+        margin: 0 0 6px;
+      }
+
+      .company {
+        color: var(--muted);
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+
+      .experience-card ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .cert-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 18px;
+      }
+
+      .cert-card {
+        list-style: none;
+      }
+
+      .cert-card li {
+        color: var(--text);
+        line-height: 1.8;
+      }
+
+      .project-grid,
+      .education-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+        gap: 18px;
+      }
+
+      .project-card h3,
+      .education-card h3 {
+        margin: 0 0 10px;
+      }
+
+      .project-type,
+      .degree-type {
+        display: inline-block;
+        color: var(--secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        font-weight: 700;
+        font-size: 0.72rem;
+        margin-bottom: 12px;
+      }
+
+      .project-card p,
+      .education-card p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .impact {
+        border-top: 1px solid var(--border);
+        padding-top: 12px;
+        color: var(--primary) !important;
+        font-weight: 600;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .min-grid,
+        .skills-grid,
+        .project-grid,
+        .education-grid,
+        .cert-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mini-grid {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .header-row {
+          display: block;
+        }
+
+        .nav {
+          margin-top: 12px;
+        }
+
+        .experience-card {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-panel,
+        .contact-panel,
+        .skill-card,
+        .experience-card,
+        .project-card,
+        .education-card,
+        .cert-card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-row">
+        <div class="brand">ARJUN DANGWAL</div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#summary">Summary</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#education">Education</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero" id="summary">
+        <div class="panel hero-panel">
+          <span class="eyebrow">Business Manager</span>
+          <h1>Driving <span class="highlight">growth, research, and operational strategy</span> in FMCG and fintech environments.</h1>
+          <p class="lead">
+            Business professional with over 10 years of experience in sales, market research, and supply chain operations, primarily in the FMCG sector. I contribute to business ideation, market research, and operational planning with a strong focus on consumer-driven strategies and measurable commercial outcomes.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="#experience">View Experience</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/arjundangwal88">LinkedIn</a>
+          </div>
+          <ul class="pill-list" aria-label="Professional strengths">
+            <li>Sales Strategy</li>
+            <li>Market Research</li>
+            <li>Business Development</li>
+            <li>Supply Chain Operations</li>
+          </ul>
+        </div>
+
+        <aside class="panel contact-panel">
+          <div class="avatar" aria-label="Profile initial">AD</div>
+          <div class="contact-list">
+            <div><strong>Location:</strong> Aberdeen, Scotland, United Kingdom</div>
+            <div><strong>Phone:</strong> 07352678182</div>
+            <div><strong>Email:</strong> arjundangwal@gmail.com</div>
+            <div><strong>LinkedIn:</strong> linkedin.com/in/arjundangwal88</div>
+            <div><strong>Availability:</strong> Open to business, sales, strategy and market research roles</div>
+          </div>
+        </aside>
+      </section>
+
+      <div class="mini-grid" aria-label="Professional highlights">
+        <div class="mini-card">
+          <strong>10+</strong>
+          <span>Years of business experience</span>
+        </div>
+        <div class="mini-card">
+          <strong>FMCG</strong>
+          <span>Primary industry focus</span>
+        </div>
+        <div class="mini-card">
+          <strong>7+</strong>
+          <span>Certifications and learning credentials</span>
+        </div>
+        <div class="mini-card">
+          <strong>UK</strong>
+          <span>Current base in Aberdeen</span>
+        </div>
+      </div>
+
+      <section id="skills">
+        <div class="section-header">
+          <h2>Top skills</h2>
+          <p>Core capabilities across business management, research, strategy, and market-facing execution.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Core functional skills</h3>
+            <div class="chip-list">
+              <span class="chip">Supply Chain Operations</span>
+              <span class="chip">IT Business Strategy</span>
+              <span class="chip">Market Research</span>
+              <span class="chip">Sales Strategy</span>
+              <span class="chip">Business Development</span>
+              <span class="chip">Consumer Insights</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Analytical and digital skills</h3>
+            <div class="chip-list">
+              <span class="chip">Pandas</span>
+              <span class="chip">Bloomberg Spreadsheet Analysis</span>
+              <span class="chip">Business Analytics</span>
+              <span class="chip">Research Methods</span>
+              <span class="chip">Financial Modelling</span>
+              <span class="chip">Competitor Analysis</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Progressive leadership roles spanning sales, operations, relationship management, and market development.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="experience-card">
+            <div class="period">Mar 2019 - Aug 2025</div>
+            <div>
+              <h3>Business Manager</h3>
+              <div class="company">Santram Industries · Dehradun</div>
+              <ul>
+                <li>Led business ideation, market research, and operational planning across the FMCG sector.</li>
+                <li>Developed consumer-driven strategies for pasta, vermicelli, cookies, and rusks using field visits, surveys, and competitor analysis.</li>
+                <li>Aligned product development, pricing decisions, and local demand insights to strengthen growth opportunities and improve strategic execution.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="period">Dec 2012 - Mar 2019</div>
+            <div>
+              <h3>Business Development Manager</h3>
+              <div class="company">Dangwal Enterprises · Uttarakhand, India</div>
+              <ul>
+                <li>Supported business development, sales strategy, and market expansion for a super stockist and consignment forwarding agency.</li>
+                <li>Maintained distribution and strategic growth support for major FMCG brands including Parle Agro Ltd., Campco Ltd., Gillanders Kothari Group, CG Foods, Unibic, Cornitos, and Adarsh Foods & Namkeens.</li>
+                <li>Contributed to sales growth through territory planning, visibility initiatives, and operational coordination across channels.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="period">Nov 2011 - Oct 2012</div>
+            <div>
+              <h3>Retail Manager</h3>
+              <div class="company">Intec Capital Limited · New Delhi</div>
+              <ul>
+                <li>Built strong relationships with SME clients to understand financing needs and deliver tailored support.</li>
+                <li>Promoted machinery financing solutions and consistently exceeded sales targets.</li>
+                <li>Negotiated loan terms that created value for both clients and the organisation.</li>
+                <li>Guideed clients through application processes to ensure smooth onboarding and financing execution.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="period">May 2011 - Jun 2011</div>
+            <div>
+              <h3>Finance Management Trainee</h3>
+              <div class="company">Catvision Limited · Noida</div>
+              <ul>
+                <li>Supported the finance team in day-to-day operations, financial reporting, and tax compliance.</li>
+                <li>Worked with SAP ERP (FI module) and gained practical exposure to corporation finance systems and statutory reporting.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="period">May 2011 - May 2011</div>
+            <div>
+              <h3>Internship Trainee</h3>
+              <div class="company">Shekhar Chandra & Co. · Rishikesh</div>
+              <ul>
+                <li>Assisted in audit and financial record-keeping for the CSD Unit at Raiwala Cantonment, Dehradun.</li>
+                <li>Gained practical foundation in accounting procedures in a government-regulated institutional retail environment.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="certifications">
+        <div class="section-header">
+          <h2>Certifications</h2>
+          <p>Continuous learning in analytics, finance, digital strategy, and emerging technologies.</p>
+        </div>
+
+        <div class="cert-grid">
+          <ul class="cert-card">
+            <li>Business Analytics Specialization</li>
+            <li>Designing Blockchain Solutions using Amazon Managed Blockchain</li>
+            <li>Introduction to Generative AI</li>
+            <li>Learning Path Specialization</li>
+          </ul>
+          <ul class="cert-card">
+            <li>Risk Management Professional</li>
+            <li>Certification Prep Specialization</li>
+            <li>Bloomberg Spreadsheet Analysis</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="section-header">
+          <h2>Education</h2>
+          <p>Academic background in finance, management and financial technology.</p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <span class="degree-type">Master's Degree</span>
+            <h3>MSc in Financial Technology</h3>
+            <p>University of Aberdeen</p>
+            <p>September 2025</p>
+          </article>
+
+          <article class="education-card">
+            <span class="degree-type">PGDM</span>
+            <h3>Finance, General and Marketing</h3>
+            <p>Institute of Management Studies (IMS) Ghaziabad - Business School</p>
+            <p>April 2010 - April 2012</p>
+          </article>
+
+          <article class="education-card">
+            <span class="degree-type">Undergraduate</span>
+            <h3>BBA in Business Administration and Management, General</h3>
+            <p>Institute of Management Studies, Noida</p>
+            <p>April 2007 - March 2010</p>
+          </article>
+
+          <article class="education-card">
+            <span class="degree-type">Earlier studies</span>
+            <h3>BBA in Business Administration</h3>
+            <p>IMS Noida</p>
+            <p>2007 - 2010</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

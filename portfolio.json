@@ -1,0 +1,179 @@
+{
+  "profile": {
+    "name": "Arjun Dangwal",
+    "title": "Business Manager | Financial Technology, Market Research",
+    "location": "Aberdeen, Scotland, United Kingdom",
+    "email": "arjundangwal@gmail.com",
+    "phone": "07352678182",
+    "linkedin": "https://www.linkedin.com/in/arjundangwal88",
+    "website": "https://www.linkedin.com/in/arjundangwal88",
+    "availability": "Open to business, sales, strategy, and market research opportunities"
+  },
+  "summary": "Business professional with over 10 years of experience in sales, market research, and supply chain operations, primarily in the FMCG sector. At Santram Industries, I contributed to business ideation, market research, and operational planning, with a focus on consumer-driven product strategies for pasta, cookies, and rusks. Equipped with certifications in market research and research methods, alongside skills in supply chain operations and IT business strategy, I am committed to leveraging analytical capabilities and market insights to align product offerings with customer needs and support organisational growth.",
+  "highlights": [
+    {
+      "label": "Experience",
+      "value": "10+ years"
+    },
+    {
+      "label": "Sector focus",
+      "value": "FMCG and Financial Technology"
+    },
+    {
+      "label": "Core strengths",
+      "value": "Sales, Market Research, Supply Chain"
+    },
+    {
+      "label": "Location",
+      "value": "Aberdeen, UK"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Top Skills",
+      "items": [
+        "Supply Chain Operations",
+        "IT Business Strategy",
+        "Pandas (Software)",
+        "Market Research",
+        "Business Development",
+        "Sales Strategy"
+      ]
+    },
+    {
+      "category": "Analytical Tools",
+      "items": [
+        "Bloomberg Spreadsheet Analysis",
+        "Business Analytics",
+        "Financial Modelling",
+        "Consumer Insights",
+        "Competitor Analysis",
+        "Research Methods"
+      ]
+    }
+  ],
+  "certifications": [
+    "Business Analytics Specialization",
+    "Designing Blockchain Solutions using Amazon Managed Blockchain",
+    "Introduction to Generative AI",
+    "Learning Path Specialization",
+    "Risk Management Professional",
+    "Certification Prep Specialization",
+    "Bloomberg Spreadsheet Analysis"
+  ],
+  "experience": [
+    {
+      "role": "Business Manager",
+      "company": "Santram Industries",
+      "period": "March 2019 - August 2025",
+      "location": "Dehradun",
+      "employmentType": "Full-time",
+      "highlights": [
+        "Led business ideation, market research, and operational planning with a strong focus on the FMCG sector.",
+        "Developed consumer-driven product strategies for pasta, vermicelli, cookies, and rusks based on field visits, competitor analysis, and customer surveys.",
+        "Aligned product development, pricing decisions, and local market insights to improve demand understanding and grow business opportunities.",
+        "Supported strategic growth initiatives by translating market intelligence into actionable operational plans."
+      ]
+    },
+    {
+      "role": "Business Development Manager",
+      "company": "Dangwal Enterprises",
+      "period": "December 2012 - March 2019",
+      "location": "Uttarakhand, India",
+      "employmentType": "Full-time",
+      "highlights": [
+        "Played a key role in business development, sales strategy, and market expansion for a super stockist and consignment forwarding agency.",
+        "Managed client relationships and distribution support for leading FMCG brands including Parle Agro Ltd., Campco Ltd., Gillanders Kothari Group, CG Foods, Unibic, Cornitos, and Adarsh Foods & Namkeens.",
+        "Supported sales growth through territory planning, visibility strategies, and operational coordination across channels."
+      ]
+    },
+    {
+      "role": "Retail Manager",
+      "company": "Intec Capital Limited",
+      "period": "November 2011 - October 2012",
+      "location": "New Delhi",
+      "employmentType": "Full-time",
+      "highlights": [
+        "Built strong relationships with SME clients to understand financing needs and provide tailored support.",
+        "Promoted machinery financing solutions and consistently exceeded sales targets.",
+        "Negotiated loan terms that created value for both clients and the organisation.",
+        "Collaborated with machinery manufacturers to structure bundled financing options.",
+        "Guided clients through the loan application process to ensure smooth and efficient processing."
+      ]
+    },
+    {
+      "role": "Finance Management Trainee",
+      "company": "Catvision Limited",
+      "period": "May 2011 - June 2011",
+      "location": "Noida",
+      "employmentType": "Trainee",
+      "highlights": [
+        "Supported finance team operations in reporting, day-to-day accounting functions, and tax compliance processes.",
+        "Worked with SAP ERP (FI module) to assist with corporate finance operations and statutory compliance.",
+        "Gained practical exposure to ERP-based accounting and financial controls in a listed corporate environment."
+      ]
+    },
+    {
+      "role": "Internship Trainee",
+      "company": "Shekhar Chandra & Co.",
+      "period": "May 2011 - May 2011",
+      "location": "Rishikesh",
+      "employmentType": "Internship",
+      "highlights": [
+        "Assisted in audit and financial record-keeping for the CSD Unit at Raiwala Cantonment, Dehradun.",
+        "Developed foundational knowledge in accounting practices within a government-regulated retail environment."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science",
+      "field": "Financial Technology",
+      "school": "University of Aberdeen",
+      "period": "September 2025",
+      "location": "Aberdeen, Scotland, United Kingdom"
+    },
+    {
+      "degree": "PGDM",
+      "field": "Finance, General and Marketing",
+      "school": "Institute of Management Studies (IMS) Ghaziabad - Business School",
+      "period": "April 2010 - April 2012",
+      "location": "Ghaziabad, India"
+    },
+    {
+      "degree": "Bachelor of Business Administration - BBA",
+      "field": "Business Administration and Management, General",
+      "school": "Institute of Management Studies, Noida",
+      "period": "April 2007 - March 2010",
+      "location": "Noida, India"
+    },
+    {
+      "degree": "Bachelor of Business Administration",
+      "field": "Business Administration",
+      "school": "IMS Noida",
+      "period": "2007 - 2010",
+      "location": "Noida, India"
+    },
+    {
+      "degree": "Master of Business Administration",
+      "field": "Finance, General",
+      "school": "IMS Ghaziabad",
+      "period": "2010 - 2012",
+      "location": "Ghaziabad, India"
+    }
+  ],
+  "projects": [
+    {
+      "name": "FMCG Product Strategy and Market Expansion",
+      "type": "Market Research and Product Development",
+      "summary": "Identified market gaps for affordable, high-quality products such as pasta, vermicelli, cookies, and rusks, and used consumer research to support product strategy and pricing decisions.",
+      "impact": "Helped align product offerings with local demand and support business growth in the FMCG category."
+    },
+    {
+      "name": "Business Development and Distribution Growth",
+      "type": "Sales and Channel Expansion",
+      "summary": "Worked with leading FMCG brands to strengthen market presence, improve operational coordination, and support sales growth across distribution networks.",
+      "impact": "Contributed to business expansion and stronger channel relationships in a competitive retail environment."
+    }
+  ]
+}
