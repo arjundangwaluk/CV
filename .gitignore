@@ -1,0 +1,6 @@
+﻿# Local IDE & Agent configurations
+.agents/
+.github/
+.vscode/
+.idea/
+*.log
