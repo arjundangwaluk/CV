@@ -2,7 +2,7 @@
 
 **Business Manager | Financial Technology & Market Research**  
 📍 Aberdeen, Scotland, United Kingdom  
-📞 07352678182 | ✉️ [arjundangwal@gmail.com](mailto:arjundangwal@gmail.com) | 🔗 [LinkedIn Profile](https://www.linkedin.com/in/arjundangwal88)
+📞 07352678182 | ✉️ [arjun.aberdeen@gmail.com](mailto:arjun.aberdeen@gmail.com) | 🔗 [LinkedIn Profile](https://www.linkedin.com/in/arjundangwal88)
 
 ---
 
